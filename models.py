@@ -20,6 +20,6 @@ class FCModel(nn.Module):
             result = layer(result)
             if i != len(self.layers) - 1:
                 result = F.relu(result)
-                #result = F.dropout(result)
+                # result = F.dropout(result)
 
         return result
