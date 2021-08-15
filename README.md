@@ -17,6 +17,7 @@ https://user-images.githubusercontent.com/23010176/129469404-daca2cb9-3b6b-4eb0-
 
 Hasselt, H., 2021. Double Q-learning. [online] Papers.nips.cc. Available
 at: <https://papers.nips.cc/paper/3964-double-q-learning> [Accessed 15 August 2021]. Arxiv.org. 2016. Prioritized
+
 Experience Replay. [online] Available at: <https://arxiv.org/pdf/1511.05952.pdf> [Accessed 15 August 2021].
 
 
