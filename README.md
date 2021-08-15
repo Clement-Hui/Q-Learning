@@ -8,7 +8,8 @@ for multiple OpenAI gym environments.
 https://user-images.githubusercontent.com/23010176/129469404-daca2cb9-3b6b-4eb0-b7e8-ebe6463a9ef6.mp4
 
 ## Algorithms / Libraries used
-
+- Pytorch -- My NN libary of choice
+- Numpy -- Array processing
 - OpenAI Gym -- Reinforcement learning environement used in the project
 - Double Q Learning -- Target and Online model for more stable and faster training
 - Prioritized Experience Replay -- WIP
