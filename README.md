@@ -7,6 +7,11 @@ for multiple OpenAI gym environments.
 
 https://user-images.githubusercontent.com/23010176/129469404-daca2cb9-3b6b-4eb0-b7e8-ebe6463a9ef6.mp4
 
+## Performance
+![img.png](imgs/img.png)
+![img_1.png](imgs/img_1.png)
+![img_2.png](imgs/img_2.png)
+
 ## Algorithms / Libraries used
 - Pytorch -- My NN libary of choice
 - Numpy -- Array processing

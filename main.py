@@ -2,9 +2,50 @@ import torch
 
 from agent import Agent
 from models import FCModel
+from config import Config
 
-agent = Agent(FCModel, (8, 32, 128, 4), "LunarLander-v2", 0.4, 0.99, 0.01,
-              lambda x: max(0.998 ** x, 0.1), lambda x: (50000 - x) / 50000, torch.optim.Adam, 0.7, 0.5, 10000, 128,
-              10000)
+config = Config("config.json")
+"""
+{
+  "model": "FCModel",
+  "model_size": [
+    8,
+    320,
+    160,
+    4
+  ],
+  "env": "LunarLander-v2",
+  "epsilon": 0.5,
+  "gamma": 0.995,
+  "lr": 0.001,
+  "lr_decay": "lambda x: max(0.999997 ** x, 0.5)",
+  "epsilon_decay": "lambda x: max((50000 - x) / 50000, 0.1)",
+  "optimizer": "adam",
+  "alpha": 0.7,
+  "beta": 0.5,
+  "replay_size": 100000,
+  "batch_size": 64,
+  "update_every": 4,
+  "tau": 0.004
+}
+"""
+agent: Agent = Agent(config["model"],
+                     config["model_size"],
+                     config["env"],
+                     config["epsilon"],
+                     config["gamma"],
+                     config["lr"],
+                     config["lr_decay"],
+                     config["epsilon_decay"],
+                     config["optimizer"],
+                     config["PER"],
+                     config["alpha"],
+                     config["beta"],
+                     config["replay_size"],
+                     config["batch_size"],
+                     config["train_every"],
+                     config["update_every"],
+                     config["tau"])
 
-agent.train(10000, 150, 20, 25)
+agent.writer.add_text("Hyper-parameters", config.to_str())
+agent.train(10000, 200, 20, 25)
