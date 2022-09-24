@@ -5,7 +5,7 @@ for multiple OpenAI gym environments.
 
 ## Demo
 
-https://user-images.githubusercontent.com/23010176/129469404-daca2cb9-3b6b-4eb0-b7e8-ebe6463a9ef6.mp4
+https://user-images.githubusercontent.com/23010176/192074983-ceebd7d5-2e6d-4dab-9963-bb8b375e9f31.mp4
 
 ## Performance
 ![img.png](imgs/img.png)
@@ -13,11 +13,11 @@ https://user-images.githubusercontent.com/23010176/129469404-daca2cb9-3b6b-4eb0-
 ![img_2.png](imgs/img_2.png)
 
 ## Algorithms / Libraries used
-- Pytorch -- My NN libary of choice
-- Numpy -- Array processing
-- OpenAI Gym -- Reinforcement learning environement used in the project
+- Pytorch -- ML Library of choice
+- Numpy -- Data processing and sampling
+- OpenAI Gym -- Reinforcement learning environement library
 - Double Q Learning -- Target and Online model for more stable and faster training
-- Prioritized Experience Replay -- WIP
+- Prioritized Experience Replay (Disabled) -- Prioritizes replay memory based on their error
 
 ## References
 
@@ -25,6 +25,3 @@ Hasselt, H., 2021. Double Q-learning. [online] Papers.nips.cc. Available
 at: <https://papers.nips.cc/paper/3964-double-q-learning> [Accessed 15 August 2021]. Arxiv.org. 2016. Prioritized
 
 Experience Replay. [online] Available at: <https://arxiv.org/pdf/1511.05952.pdf> [Accessed 15 August 2021].
-
-
-
