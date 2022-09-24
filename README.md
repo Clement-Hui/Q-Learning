@@ -8,11 +8,13 @@ for multiple OpenAI gym environments.
 https://user-images.githubusercontent.com/23010176/192074983-ceebd7d5-2e6d-4dab-9963-bb8b375e9f31.mp4
 
 ## Performance
+
 ![img.png](imgs/img.png)
 ![img_1.png](imgs/img_1.png)
 ![img_2.png](imgs/img_2.png)
 
 ## Algorithms / Libraries used
+
 - Pytorch -- ML Library of choice
 - Numpy -- Data processing and sampling
 - OpenAI Gym -- Reinforcement learning environement library
