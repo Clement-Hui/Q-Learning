@@ -1,0 +1,24 @@
+{
+  "model": "FCModel",
+  "model_size": [
+    8,
+    64,
+    32,
+    4
+  ],
+  "env": "LunarLander-v2",
+  "epsilon": 0.4,
+  "gamma": 0.999,
+  "lr": 0.001,
+  "lr_decay": "lambda x: max(0.999997 ** x, 0.5)",
+  "epsilon_decay": "lambda x: max((50000 - x) / 50000, 0.1)",
+  "optimizer": "adam",
+  "alpha": 0.7,
+  "beta": 0.5,
+  "PER": false,
+  "replay_size": 1000000,
+  "batch_size": 64,
+  "train_every": 1,
+  "update_every": 4,
+  "tau": 0.001
+}
